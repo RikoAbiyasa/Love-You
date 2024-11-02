@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #040d36;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.heart {
+    width: 100px;
+    /* Ubah ukuran sesuai kebutuhan */
+    animation: heartbeat 1.5s infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 99, 71, 0.7));
+    /* Bayangan pada hati */
+    transition: transform 0.3s, filter 0.3s;
+    /* Transisi halus */
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(255, 99, 71, 0.7));
+    }
+
+    50% {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 20px rgba(255, 99, 71, 1));
+        /* Meningkatkan intensitas bayangan saat berdetak */
+    }
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #ffffff;
+    margin-top: 20px;
+}
